@@ -1,0 +1,88 @@
+#menu{
+    background: #DDD;
+    text-align: center;
+    padding:5px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+#menu a {
+    display: none;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#menu a:hover {
+    background: #BBB;
+}
+
+main > section {
+    display: none;
+    padding: 20px 5px;
+}
+
+section h1 {
+    margin: 10px 0px;
+    font-size: 1.2em;
+}
+
+table th {
+    background: #DDD;
+    padding: 10px;
+}
+
+table td {
+    padding: 5px 10px;
+    background: #E3e3e3;
+}
+
+.commentsClass {
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.04);
+}
+
+#infoBox, #errorBox, #loadingBox {
+    width: 80%;
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#loadingBox {
+    background: #7cb3e9;
+}
+
+#infoBox {
+    background: #393;
+}
+
+#errorBox {
+    background: #f50;
+}
+
+#footer {
+    background: #DDD;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    text-align: center;
+    border-radius: 3px;
+}
+
+#formHidden {
+    display:none;
+}
+footer {
+    background:#DDD;
+    width:100%;
+    height:30px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    text-align: center;
+    border-radius: 3px;
+}

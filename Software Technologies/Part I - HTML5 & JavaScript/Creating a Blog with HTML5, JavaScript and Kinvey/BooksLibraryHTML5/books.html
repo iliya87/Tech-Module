@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Книжарница</title>
+    <link rel="stylesheet" type="text/css" href="books.css" />
+    <script src="jquery-3.0.0.min.js"></script>
+    <script src="books.js"></script>
+
+</head>
+<body>
+<header id="menu">
+    <a href="#" id="linkHome">Начало</a>
+    <a href="#" id="linkLogin">Вход</a>
+    <a href="#" id="linkRegister">Регистрация</a>
+    <a href="#" id="linkListBooks">Списък с книги</a>
+    <a href="#" id="linkCreateBook">Добави книга</a>
+    <a href="#" id="linkLogout">Изход</a>
+</header>
+
+
+<main>
+    <section id="loadingBox">Зареждам...</section>
+
+    <section id="infoBox" onclick = "$(this).fadeOut">Инфрмация</section>
+
+    <section id="errorBox" onclick = "$(this).fadeOut">Грешка</section>
+
+    <section id="viewHome">
+        <h1>Добре дошли</h1>
+        Добре дошли в нашата книжарница.
+    </section>
+
+    <section id="viewLogin">
+        <h1>Вход</h1>
+        <form id="formLogin">
+            <div>Потребителско име:</div>
+            <div><input type="text" id="loginUser" required  /></div>
+            <div>Парола:</div>
+            <div><input type="password" id="loginPass" required /></div>
+            <div><input type="submit" value="Влез" /></div>
+        </form>
+    </section>
+
+    <section id="viewRegister">
+        <h1>Регистрация</h1>
+        <form id="formRegister">
+            <div>Потребителско име:</div>
+            <div><input type="text" id="registerUser" required = "true" /></div>
+            <div>Парола:</div>
+            <div><input type="password" id="registerPass" required ="true" /></div>
+            <div><input type="submit" value="Регистрация" /></div>
+        </form>
+    </section>
+
+    <section id="viewBooks">
+        <h1>Книги</h1>
+        <div id="books"></div>
+    </section>
+
+    <section id="viewCreateBook">
+        <h1>Добавяне на книга</h1>
+        <form id="formCreateBook">
+            <div>Заглавие:</div>
+            <div><input type="text" id="bookTitle" required  /></div>
+            <div>Автор:</div>
+            <div><input type="text" id="bookAuthor" required /></div>
+            <div>Описание:</div>
+            <div><textarea id="bookDescription" rows="10" ></textarea></div>
+            <div><input type="submit" value="Създай" /></div>
+        </form>
+    </section>
+
+</main>
+
+<footer>Библиотека - Sample Project</footer>
+
+</body>
+</html>
